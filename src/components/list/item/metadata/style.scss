@@ -1,0 +1,21 @@
+#Metadata {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 10px 5px;
+    text-align: start;
+    span {
+        color: #999;
+        font-weight: 400;
+        margin-right: 5px;
+        &.title {
+            font-weight: 600;
+        }
+    }
+
+    &:hover {
+        background: #444;
+    }
+}

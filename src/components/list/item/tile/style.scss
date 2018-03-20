@@ -1,0 +1,12 @@
+#Tile {
+    background-color: #444;
+    margin-right: 15px;
+    min-width: 200px;
+    height: 275px;
+    &:hover {
+        background-color: #666;
+        span {
+            color: #fff;
+        }
+    }
+}
