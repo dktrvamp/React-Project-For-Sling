@@ -22,6 +22,17 @@ module.exports = {
                         loader: "sass-loader" // compiles Sass to CSS
                     }
                 ]
+            },
+                        // For all referenced image and font files, use the file-loader.
+            // It will copy all of these files to the ./[output.path]/assets
+            // folder and rename them with the the pattern [name]_[hash:7].[ext].
+            // https://github.com/webpack/file-loader#file-loader-for-webpack
+            {
+                test: /\.(jpg|png|ico|svg|eot|ttf|otf|woff2?)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/[name]_[hash:7].[ext]'
+                }
             }
         ]
     },

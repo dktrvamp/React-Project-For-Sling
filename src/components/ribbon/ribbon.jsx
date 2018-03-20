@@ -8,11 +8,15 @@ import './style.scss';
 export default class Ribbon extends React.Component {
 
     render() {
-        const data = this.props.data || [];
+        const {tiles, title} = this.props.data || {};
+
         return <div id="Ribbon">
-            {
-                data.map(item => (<Tile key={item.id} data={item}/>))
-            }
+            <p className="ribbon-title">{title}</p>
+            <section>
+                {
+                    tiles.map(item => (<Tile key={item.id} data={item}/>))
+                }
+            </section>
         </div>;
     }
 }

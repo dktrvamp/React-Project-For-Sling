@@ -19,7 +19,7 @@ export default class Tile extends React.Component {
         return (
             <div id="Tile" key={item.id} style={{width}}>
                 <Thumbnail data={thumbnail}/>
-                <Metadata data={item.metadata}/>
+                <Metadata data={item}/>
             </div>
         );
     }
