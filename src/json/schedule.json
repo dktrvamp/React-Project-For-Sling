@@ -843,6 +843,7 @@
           "type": "program",
           "w": 2048
         },
+        "isOnNow": true,
         "metadata": {
           "ratings": [
             "US_UPR_TV-G"

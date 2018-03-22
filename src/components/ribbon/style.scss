@@ -1,12 +1,14 @@
+@import '../../styles/app';
 #Ribbon {
-    padding: 10px 0 20px 55px;
-    section {
-        height: auto;
+    padding: 10px 0 20px $left-justify;
+    .horizontal-scroll-container {
         display: inline-flex;
         flex: 1;
+        overflow-x: scroll;
+        overflow-y: hidden;
         width: 100%;
-        overflow: auto;
     }
+
     .ribbon-title {
         display: block;
         color: #ccc;

@@ -1,21 +1,26 @@
+@import '../../../../styles/app';
 #Metadata {
+    @include ellipsis();
     width: auto;
-    height: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    height: 100%;
     padding: 10px 5px;
     text-align: start;
+    transition: all 250ms ease-in-out;
+    color: #999;
     span {
         color: #999;
         font-weight: 400;
         margin-right: 5px;
+        &.on-now {
+            color: #ffab15;
+            font-weight: 600;
+        }
         &.title {
             font-weight: 600;
         }
     }
-
-    &:hover {
-        background: #444;
+    .sub-content {
+        @include ellipsis();
+        margin-top: 5px;
     }
 }

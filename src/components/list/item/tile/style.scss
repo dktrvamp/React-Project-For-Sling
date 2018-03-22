@@ -1,10 +1,19 @@
+@import '../../../../styles/app';
 #Tile {
-    background-color: #444;
-    margin-right: 15px;
+    background-color: #000;
+    margin-right: $left-justify;
     min-width: 200px;
-    height: 275px;
+    height: 215px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
     &:hover {
         background-color: #666;
+        transform: scale3d(1.2, 1.1, 2);
+        #Metadata {
+            transform: scale3d(.8, 1, 1.2);
+        }
+
         span {
             color: #fff;
         }

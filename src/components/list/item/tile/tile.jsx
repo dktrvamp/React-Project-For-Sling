@@ -14,7 +14,7 @@ export default class Tile extends React.Component {
         const item = this.props.data || [];
         const {w, h, url} = item.thumbnail;
         const thumbnail = getScaledImage(url, w, h, TileConstants);
-        const width = thumbnail.width;
+        const {width} = thumbnail;
 
         return (
             <div id="Tile" key={item.id} style={{width}}>

@@ -27,6 +27,5 @@ export default class App extends React.Component {
                 ribbons.map(item => <Ribbon key={item.id} data={item}/>)
             }
             </div>
-
     }
 }
