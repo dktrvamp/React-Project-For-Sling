@@ -27,7 +27,7 @@ export default class Ribbon extends BaseModel {
 
             newTiles.push(tile);
         });
-        debugger;
+
         return newTiles;
     }
 
